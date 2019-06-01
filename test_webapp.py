@@ -1,3 +1,4 @@
+# FLASK_APP=test_webapp.py flask run
 from flask import Flask as any_name
 from student import Student
 

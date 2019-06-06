@@ -9,5 +9,9 @@ app = any_name(__name__)
 def hello():
     return "Hello World!"
 
+@app.route("/static")
+def static_content():
+    return app.send_static_file("static.html")
+
 if __name__ == '__main__':
     app.run(host='localhost', port=8080)
